@@ -1,4 +1,4 @@
-* {
+/** {
     box-sizing: border-box;
 }
 
@@ -94,5 +94,219 @@ div.hero h2 {
 @media screen and (min-width: 768px) {
     .container .div.text-box {
         margin: 10px;
+    }
+}*/
+/* My design Changes */
+body {
+    font-size: 16px; /* Increased font size for better readability */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Changed to a modern font */
+    line-height: 1.6; /* Increased line-height for better spacing */
+    color: #333; /* Updated text color for better contrast */
+    background-color: #f4f4f9; /* Light background for a modern look */
+}
+/* This is a Modern Design Change for the Navigation Bar */
+nav.menu {
+    background-color: #123457; /* Sleek dark background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Space between the logo and nav items */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Section */
+nav.menu .logo {
+    font-size: 1.5rem;
+    color: #e6a4a4;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Nav List */
+nav.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Links Styling */
+nav.menu ul li {
+    margin: 0 10px;
+}
+
+nav.menu ul li a {
+    color: #007bff;
+    background-color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-out, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover and Focus States */
+nav.menu ul li a:hover,
+nav.menu ul li a:focus {
+    background-color: #007bff; /* Light blue on hover */
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.4); /* Subtle shadow on hover */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    nav.menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav.menu ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav.menu ul li {
+        margin: 10px 0;
+    }
+
+    nav.menu ul li a {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* This is a Responsive Design Change */
+div.menu {
+    width: 100%;
+    background-color: #343a40; /* Darker background for a modern look */
+    height: 60px; /* Increased height for better spacing */
+    padding: 0 20px; /* Reduced padding for a more compact look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Flexbox for better alignment */
+}
+
+/* This is an Accessibility Change */
+div.menu ul,
+div.menu ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem; /* Standardized font size */
+    text-decoration: none;
+    color: #fff; /* High contrast for accessibility */
+    transition: background-color 0.3s ease; /* Smooth hover transitions */
+}
+
+div.menu ul li a:hover  {
+    background-color: #007bff; /* Modern blue hover effect */
+    color: white;
+}
+
+/* This is a Responsive Design Change */
+div.hero {
+    height: 350px;
+    background-color: #007bff; /* Modern blue background */
+    background-image: url('/bg.png');
+    background-size: cover; /* Full coverage of background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centered text for better design */
+    padding: 20px;
+}
+
+/* This is an Accessibility Change */
+div.hero h1,
+div.hero h2 {
+    text-align: center;
+    color: #fff; /* High contrast for readability */
+}
+
+div.hero h1 {
+    font-size: 3rem; /* Increased font size for visual hierarchy */
+}
+
+div.hero h2 {
+    font-size: 1.5rem; /* Reduced size for subtitle clarity */
+    margin-top: 10px;
+}
+
+/* This is a Responsive Design Change */
+.container {
+    padding: 20px;
+    max-width: 1200px; /* Improved layout with max-width */
+    margin: 0 auto; /* Centering the content */
+}
+
+/* This is a Modern Design Change */
+.page-area {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 8px; /* Smooth corners for a modern feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* This is an Accessibility Change */
+.container div.text-box h1 {
+    font-size: 1.8rem; /* Larger heading for better readability */
+    margin-bottom: 10px;
+}
+
+.container div.text-box p {
+    font-size: 1rem; /* Standardized font size */
+    text-align: justify;
+    color: #555; /* Softer color for text */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Bottom section */
+.bottom {
+    height: auto; /* Adjusted for content */
+    background-color: #343a40;
+    padding: 20px;
+    text-align: center;
+    color: white; /* High contrast for text */
+}
+
+@media screen and (max-width: 768px) {
+    /* This is a Responsive Design Change */
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .page-area {
+        padding: 10px;
     }
 }
