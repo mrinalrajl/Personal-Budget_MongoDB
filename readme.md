@@ -11,4 +11,4 @@ Minor changes to code for SEO and A11y
 
 
 # Current performence in Lighthouse
-<image src="basic.png">
+<image src="screen.png">
