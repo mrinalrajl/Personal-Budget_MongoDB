@@ -14,7 +14,8 @@ Minor changes to code for SEO and A11y
 <image src="/Screenshots/screen.png">
 
 # Week _4 : TAsk
-Server 
-Axio
-Chart.js
+* Server 
+* Axio
+* Chart.js
+* Pie Chart
 <image src="/Screenshots/Pie_Chart.png">
