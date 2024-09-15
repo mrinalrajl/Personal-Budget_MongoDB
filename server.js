@@ -1,5 +1,4 @@
 const express = require('express');
-const { title } = require('process');
 const app = express();
 const port = 3000;
 
@@ -11,7 +10,7 @@ const budget = {
     myBudget: [
     {
         title: 'Eat Out',
-        budget: 30
+        budget: 70
     },
     {
         title: 'Rent',
@@ -21,12 +20,23 @@ const budget = {
         title: 'Groceries',
         budget: 90
     },
-    {
+        {
         title: 'Fuel',
         budget: 40
-    }
-
-]
+        },
+    {
+        title: 'Shopping',
+        budget : 150
+    },
+    {
+        title: 'Car EMI',
+        budget: 500
+    },
+    {
+        title: 'Maitence ',
+        budget: 200
+    },
+    ]
 };
 app.get('/hello', (req, res) => {
     res.send('Hello World! From Mrinal');
@@ -39,4 +49,3 @@ app.get('/budget', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
-
