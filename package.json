@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mrinalrajl/perbudgt.git#readme",
   "dependencies": {
+    "chart.js": "^4.4.4",
     "express": "^4.21.0"
   }
 }
