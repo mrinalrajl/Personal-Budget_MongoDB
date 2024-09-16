@@ -18,4 +18,6 @@ Minor changes to code for SEO and A11y
 * Axio
 * Chart.js
 * Pie Chart
+* Loading Data From Json File
+
 <image src="/Screenshots/Pie_Chart.png">
