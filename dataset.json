@@ -8,7 +8,7 @@
     {
         "title": "Rent",
         "budget": 440,
-        "backgroundColor":"#ff6384"
+        "backgroundColor":"#F52AB1"
     },
     {
         "title": "Groceries",
@@ -18,12 +18,12 @@
         {
         "title": "Fuel",
         "budget": 40,
-        "backgroundColor": "'#fd6b19"
+        "backgroundColor": "#fd6b19"
         },
     {
         "title": "Shopping",
         "budget" : 150,
-        "backgroundColor": "'#A788F2"
+        "backgroundColor": "#A788F2"
     },
     {
         "title": "Car EMI",
@@ -38,11 +38,11 @@
     {
         "title": "Insurance",
         "budget": 250,
-        "backgroundColor": "#1f2912"
+        "backgroundColor": "#F58C2A"
     },
     {
         "title": "House Emi",
-        "budget": 3000,
+        "budget": 2000,
         "backgroundColor": "#4a263e"
     }
     ]

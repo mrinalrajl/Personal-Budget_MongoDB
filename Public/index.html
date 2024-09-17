@@ -99,7 +99,7 @@
             };
 
         function createChart() {
-            var ctx = document.getElementById('myChart').getContext('2d');
+            var ctx = document.getElementById("myChart").getContext("2d");
             var myPieChart = new Chart(ctx, {
                 type: 'pie',
                 data: dataSource
@@ -107,19 +107,32 @@
         }
 
         function getBudget() {
-            axios.get('http://localhost:3000/budget')
-            .then(function (res) {
-                for (var i = 0; i < res.data.myBudget.length; i++) {
-                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.myBudget[i].title;
-                    createChart();
-                }
-            });
+    axios.get('http://localhost:3000/budget')
+                .then(function (res) {
+                    dataSource.datasets[0].data = []; // Clear previous data
+                    dataSource.datasets[0].backgroundColor = []; // Clear previous colors
+                    dataSource.labels = []; // Clear previous labels
+
+                    res.data.myBudget.forEach(item => {
+                        dataSource.datasets[0].data.push(item.budget);
+                        dataSource.datasets[0].backgroundColor.push(item.backgroundColor);
+                        dataSource.labels.push(item.title);
+                    });
+
+                    // Check data loading
+                    console.log("Data loaded:", dataSource);
+
+                    var myPieChart = createChart();
+                    myPieChart.update();
+                })
+                .catch(function (error) {
+                    console.log("Error fetching data: ", error);
+                });
         }
 
+
         getBudget();
-    </script>
-    <script>
+    
                     axios.get('http://localhost:3000/budget')
                         .then(function (response) {
                             createD3chart(response.data.myBudget);
@@ -128,12 +141,10 @@
                             console.log("Error fetching data: ", error);
                         });
 
-                    function createD3chart(budgetData) {
+    function createD3chart(budgetData) {
                         var width = 960,
                             height = 450,
                             radius = Math.min(width, height) / 2;
-
-                        var color = d3.scaleOrdinal(d3.schemeCategory10);
 
                         var svg = d3.select('#d3Chart').append("svg")
                             .attr("width", width)
@@ -158,7 +169,7 @@
                         g.append("path")
                             .attr("d", arc)
                             .style("fill", function (d) {
-                                return color(d.data.title);
+                                return d.data.backgroundColor; // Use the background color specified in your dataset
                             });
 
                         g.append("text")
@@ -169,8 +180,9 @@
                             .style("text-anchor", "middle")
                             .text(function (d) {
                                 return d.data.title;
-                            });
-                        }
+                            }); 
+                            }
+
                         var svg = d3.select("body")
                         .append("svg")
                         .append("g")
