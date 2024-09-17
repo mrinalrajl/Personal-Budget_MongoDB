@@ -18,11 +18,11 @@ Minor changes to code for SEO and A11y
 * Axio
 * Chart.js
 * Pie Chart
-<image src="/Screenshots/pie_chart.png">
+<image src="/Screenshots/pie_charts.png">
 
 After Task_4:
-* Added background colour to the JSON file itself than hard coding which is real-world use case.
-<image src="/Screenshots/3__charts.png">
+* Added background colourand more Data to the JSON file itself than hard coding which is real-world use case.
+<image src="/Screenshots/3_charts.png">
 
 
 * Loading Data From Json File (Dataset.json)
