@@ -2,39 +2,48 @@
     "myBudget": [
     {
         "title": "Eat Out",
-        "budget": 70
+        "budget": 70,
+        "backgroundColor": "#6DF21F"
     },
     {
         "title": "Rent",
-        "budget": 440
+        "budget": 440,
+        "backgroundColor":"#ff6384"
     },
     {
         "title": "Groceries",
-        "budget": 90
+        "budget": 90,
+        "backgroundColor": "#FFF342"
     },
         {
         "title": "Fuel",
-        "budget": 40
+        "budget": 40,
+        "backgroundColor": "'#fd6b19"
         },
     {
         "title": "Shopping",
-        "budget" : 150
+        "budget" : 150,
+        "backgroundColor": "'#A788F2"
     },
     {
         "title": "Car EMI",
-        "budget": 500
+        "budget": 500,
+        "backgroundColor": "#FFADD6"
     },
     {
         "title": "Maintence",
-        "budget": 200
+        "budget": 200,
+        "backgroundColor": "#FFD275"
     },
     {
         "title": "Insurance",
-        "budget": 250
+        "budget": 250,
+        "backgroundColor": "#1f2912"
     },
     {
         "title": "House Emi",
-        "budget": 3000
+        "budget": 3000,
+        "backgroundColor"
     }
     ]
 }
