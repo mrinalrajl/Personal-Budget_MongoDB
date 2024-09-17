@@ -10,10 +10,10 @@ Virtual Classroom example
 Minor changes to code for SEO and A11y
 
 
-# Current performence in Lighthouse
+# Current performance in Lighthouse
 <image src="/Screenshots/screen.png">
 
-# Week _4 : TAsk
+# Week _4: TAsk
 * Server 
 * Axio
 * Chart.js
