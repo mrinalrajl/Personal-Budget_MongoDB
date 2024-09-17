@@ -27,6 +27,14 @@
     {
         "title": "Maitence",
         "budget": 200
+    },
+    {
+        "title":"Insurance",
+        "budget": 250
+    },
+    {
+        "title":"House Emi",
+        "budget": 3000
     }
     ]
 }
