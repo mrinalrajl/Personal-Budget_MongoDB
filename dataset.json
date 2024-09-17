@@ -1,0 +1,32 @@
+{
+    "myBudget": [
+    {
+        "title": "Eat Out",
+        "budget": 70
+    },
+    {
+        "title": "Rent",
+        "budget": 440
+    },
+    {
+        "title": "Groceries",
+        "budget": 90
+    },
+        {
+        "title": "Fuel",
+        "budget": 40
+        },
+    {
+        "title": "Shopping",
+        "budget" : 150
+    },
+    {
+        "title": "Car EMI",
+        "budget": 500
+    },
+    {
+        "title": "Maitence",
+        "budget": 200
+    }
+    ]
+}
