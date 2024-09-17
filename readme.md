@@ -19,6 +19,7 @@ Minor changes to code for SEO and A11y
 * Chart.js
 * Pie Chart
 <image src="/Screenshots/pie_chart.png">
+
 * Loading Data From Json File
 * Added D3Js chart
 <image src="/Screenshots/2_charts.png">
