@@ -21,7 +21,7 @@ Minor changes to code for SEO and A11y
 <image src="/Screenshots/pie_charts.png">
 
 # After Task_4:
-* Added background colourand more Data to the JSON file itself than hard coding which is real-world use case.
+* Added background colour and more Data to the JSON file itself than hard coding which is a real-world use case.
 <image src="/Screenshots/3_charts.png">
 
 
@@ -33,7 +33,7 @@ Minor changes to code for SEO and A11y
 # After Assignment8 :
 
 * MongoDb task with Mongoose   
-* chnage in CSS for the entire webpage 
+* change in CSS for the entire webpage 
 <image src="/Screenshots/mongo_compass.png">
 
 
